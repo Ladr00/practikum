@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+        }
+        .button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .result {
+            font-size: 50px;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .extreme-message {
+            display: none;
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="minus">-</button>
+        <span class="result" id="result">0</span>
+        <button class="button" id="plus">+</button>
+        <div class="extreme-message" id="extreme-message">Вы достигли экстремального значения</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
